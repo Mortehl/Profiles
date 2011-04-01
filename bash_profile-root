@@ -1,0 +1,17 @@
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
+unset USERNAME
+
+alias vi='vim'
+alias focus='cucumber -p focus'
+alias resource='source ~/.bash_profile'
+alias profile='vim ~/.bash_profile'
+export EDITOR='vim'
+PS1='\[\e[0;31m\](j:\j) \u - \t [\w]\$\[\e[1;37m\] '

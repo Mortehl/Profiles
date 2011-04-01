@@ -1,0 +1,24 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+alias focus='cucumber -p focus'
+alias resource='source ~/.bash_profile'
+alias profile='vim ~/.bash_profile'
+export EDITOR='vim'
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+if [[ -s /home/aschlesinger/.rvm/scripts/rvm ]] ; then source /home/aschlesinger/.rvm/scripts/rvm ; fi
+export PATH
+
+# if [ "$PS1" ] ; then  
+#           mkdir -m 0700 /sys/fs/cgroup/cpu/user/$$
+#           echo $$ > /sys/fs/cgroup/cpu/user/$$/tasks
+#   fi
+
+PS1='\[\e[1;32m\](j:\j) \u - \t [\w]\$\[\e[1;37m\] '
