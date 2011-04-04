@@ -21,4 +21,4 @@ export PATH
 #           echo $$ > /sys/fs/cgroup/cpu/user/$$/tasks
 #   fi
 
-PS1='\[\e[1;32m\](j:\j) \u - \t [\w]\$\[\e[1;37m\] '
+PS1='\[\e[1;32m\](j:\j) \h - \t [\w]\$\[\e[1;37m\] '
